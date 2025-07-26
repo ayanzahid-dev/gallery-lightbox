@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Showcase</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    
+  <header>
+    <h1>Project Showcase</h1>
+    <p>A look into what we’ve built</p>
+  </header>
+
+  <section class="gallery">
+    <div class="image"><img src="https://picsum.photos/id/1011/400/300" alt="1"/></div>
+    <div class="image"><img src="https://picsum.photos/id/1015/400/300" alt="2"/></div>
+    <div class="image"><img src="https://picsum.photos/id/1016/400/300" alt="3"/></div>
+    <div class="image"><img src="https://picsum.photos/id/1021/400/300" alt="4"/></div>
+    <div class="image"><img src="https://picsum.photos/id/1024/400/300" alt="5"/></div>
+    <div class="image"><img src="https://picsum.photos/id/1031/400/300" alt="6"/></div>
+    <div class="image"><img src="https://picsum.photos/id/1035/400/300" alt="7"/></div>
+    <div class="image"><img src="https://picsum.photos/id/1043/400/300" alt="8"/></div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="closeBtn">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <div class="controls">
+      <span id="prev">&#10094;</span>
+      <span id="next">&#10095;</span>
+    </div>
+    <div class="caption" id="caption"></div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
